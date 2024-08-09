@@ -1,0 +1,16 @@
+.header {
+    margin-bottom: 20px;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    border-radius: 50%; /* Hace la imagen redonda */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+    object-fit: cover; /* Ajusta el contenido de la imagen para que se mantenga en el contenedor */
+    width: 120px; /* Ancho del logo */
+    height: 120px; /* Alto del logo */
+  }
