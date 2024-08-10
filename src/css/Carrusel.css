@@ -1,0 +1,23 @@
+body {
+  background-color: #f2c0bc; 
+}
+
+.carrusel {
+  width: 60vw; /* Ancho del carrusel al 70% del ancho de la ventana */
+  height: 80vh; /* Aumenta la altura del carrusel al 80% de la altura de la ventana (puedes ajustar este valor) */
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+  overflow: hidden; /* Asegura que no haya desplazamiento fuera del contenedor */
+  display: flex; /* Usa flexbox para centrar el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+.carrusel .carousel-item {
+  height: 100%; 
+}
+
+.carrusel .carousel-item img {
+  object-fit: cover; /* Ajusta la imagen para que cubra completamente el área del contenedor */
+  width: 100%; 
+  height: 100%; 
+}

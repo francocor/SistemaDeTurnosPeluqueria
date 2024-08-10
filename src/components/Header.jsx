@@ -6,8 +6,8 @@ import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
-    <div className="header">
-      <Navbar className="bg-body-tertiary" expand="lg">
+    <div className="header" >
+      <Navbar expand="lg" style={{ backgroundColor: '#f48f9f' }}>
         <Container>
           <Navbar.Brand href="#home">
             <img
@@ -28,6 +28,7 @@ const Header = () => {
               <Nav.Link href="#cursos">Cursos</Nav.Link>
               <Nav.Link href="#cursosTecItali">Tec Itali</Nav.Link>
               <Nav.Link href="#turnos">Turnos</Nav.Link>
+              <Nav.Link href="#turnos">Login</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

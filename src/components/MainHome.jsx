@@ -1,11 +1,15 @@
+import Carrusel from "./Carrusel";
+import MainHistoria from "./MainHistoria";
 
+const MainHome = () => {
+  
 
-const mainHome = () => {
   return (
     <div>
-        
+      <Carrusel/>
+      <MainHistoria/>
     </div>
-  )
-}
+  );
+};
 
-export default mainHome
+export default MainHome;
