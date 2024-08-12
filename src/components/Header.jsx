@@ -23,7 +23,7 @@ const Header = () => {
     <div className="header" >
       <Navbar expand="lg" style={{ backgroundColor: '#f48f9f' }}>
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand >
             <img
               alt="Logo"
               src={logo}
@@ -31,11 +31,12 @@ const Header = () => {
               height="80"
               className="d-inline-block align-top"
             />
-            Maria Eugenia Colorista
+            
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
+              <Nav.Link href="#servicios">Promos del mes</Nav.Link>
               <Nav.Link onClick={scrollToHistoria}>Sobre mí</Nav.Link>
               <Nav.Link href="#servicios">Servicios</Nav.Link>
               <Nav.Link href="#Productos">Productos</Nav.Link>

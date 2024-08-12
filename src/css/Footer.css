@@ -1,0 +1,95 @@
+.Footer {
+    padding: 2rem 0;
+    margin-top: 10rem; /* Reduce un poco el margen superior */
+    background-color: #efe9d1;
+    font-family: "Pacifico", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ft-1 h3 {
+    font-weight: 700;
+    font-family: cursive;
+    letter-spacing: 2px;
+    padding: 0.5rem 0;
+    color: #f15e82;
+    font-family: "Pacifico", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ft-1 span {
+    color: #f3a8ac;
+    font-family: "Pacifico", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ft-1 p {
+    padding: 0rem 2rem 0.8rem 0; /* Ajusta el padding para mejor alineación */
+    font-weight: 500;
+}
+
+.footer-icons a {
+    color: #f15e82; /* Cambia este valor al color que prefieras */
+    transition: color 0.3s;
+  }
+  
+  .footer-icons a:hover {
+    color: #f3a8ac; /* Color al hacer hover, también lo puedes cambiar */
+  }
+
+
+.Footer h5 {
+    color: #f15e82;
+    margin-bottom: 2rem; /* Agrega espacio debajo de los títulos */
+}
+
+.tecitali-image {
+    width: 200px; /* Ajusta este valor según el tamaño que prefieras */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: inline-block; /* Permite que la imagen se alinee con otros elementos en línea */
+    vertical-align: middle; /* Alinea verticalmente la imagen al centro del texto */
+    margin-left: -30px; /* Ajusta este valor para mover la imagen más a la izquierda */
+  }
+
+.Last-footer {
+    background: black;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.Last-footer p {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff; /* Asegura que el texto sea visible sobre el fondo rojo */
+}
+
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #f15e82;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .whatsapp-float:hover {
+    background-color: #128c7e;
+    cursor: pointer;
+  }
+  
+  .whatsapp-float svg {
+    width: 100%;
+    height: 100%;
+  }
