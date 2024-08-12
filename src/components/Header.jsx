@@ -4,7 +4,21 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import logo from "../assets/logo.png";
 
+
 const Header = () => {
+
+  const scrollToHistoria = () => {
+    const historiaSection = document.getElementById("MainHistoria");
+    if (historiaSection) {
+      historiaSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
+
+
+
+
   return (
     <div className="header" >
       <Navbar expand="lg" style={{ backgroundColor: '#f48f9f' }}>
@@ -22,7 +36,7 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#sobre-mi">Sobre mí</Nav.Link>
+              <Nav.Link onClick={scrollToHistoria}>Sobre mí</Nav.Link>
               <Nav.Link href="#servicios">Servicios</Nav.Link>
               <Nav.Link href="#Productos">Productos</Nav.Link>
               <Nav.Link href="#cursos">Cursos</Nav.Link>

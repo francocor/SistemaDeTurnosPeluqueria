@@ -25,7 +25,7 @@ const MainClientas = () => {
       <div className="main-clientas-container">
         <Container className="main-clientas mt-5">
 
-          <div className="TituloClientas" data-aos="fade-down"  data-aos-easing="linear"  data-aos-duration="1500">
+          <div className="TituloClientas" data-aos="fade-down"  data-aos-easing="linear"  data-aos-duration="2500">
             <h2 className="text-center">Clientas</h2>
           </div>
 

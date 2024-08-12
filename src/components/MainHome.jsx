@@ -10,7 +10,11 @@ const MainHome = () => {
     <div>
 
       <Carrusel/>
-      <MainHistoria/>
+
+      <div id="MainHistoria">
+        <MainHistoria/>
+      </div>
+
       <MainClientas/>
       
     </div>
