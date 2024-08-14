@@ -1,0 +1,9 @@
+.Productos{
+    font-family: "Pacifico", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.TituloProductos{
+    text-decoration: underline;
+}

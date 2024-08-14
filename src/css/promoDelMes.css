@@ -1,0 +1,29 @@
+.promo-container {
+    padding: 20px 0;
+    background-color: #f0c8be;;
+  }
+  
+  .video-responsive {
+    width: 100%;
+    height: auto;
+    max-height: 70vh; /* Ajusta la altura máxima del video */
+  }
+  
+  /* Opcional: Ajustar márgenes y paddings si es necesario */
+  .promo-video {
+    padding-right: 2rem; /* Ajusta el espacio a la derecha del video */
+  }
+  
+  .promo-text {
+    padding-left: 2rem; /* Ajusta el espacio a la izquierda del texto */
+  }
+
+  .promo-text h3{
+    text-decoration: dashed;
+    text-decoration: underline;
+  }
+
+  .botonpromo{
+    color: black;
+    text-decoration: none;
+  }

@@ -14,6 +14,12 @@ const Header = () => {
     }
   };
 
+  const scrollToPromos = () => {
+    const PromosSection = document.getElementById("Promos");
+    if (PromosSection) {
+      PromosSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
 
 
@@ -36,12 +42,13 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#servicios">Promos del mes</Nav.Link>
+              <Nav.Link href="/">Inicio</Nav.Link>
+              <Nav.Link onClick={scrollToPromos}>Promos del mes</Nav.Link>
               <Nav.Link onClick={scrollToHistoria}>Sobre mí</Nav.Link>
-              <Nav.Link href="#servicios">Servicios</Nav.Link>
-              <Nav.Link href="#Productos">Productos</Nav.Link>
-              <Nav.Link href="#cursos">Cursos</Nav.Link>
-              <Nav.Link href="#cursosTecItali">Tec Itali</Nav.Link>
+              <Nav.Link href="/MainServicios">Servicios</Nav.Link>
+              <Nav.Link href="/MainProductos">Productos</Nav.Link>
+              <Nav.Link href="/MainCursos">Cursos</Nav.Link>
+              <Nav.Link href="#cursosTecItali">Tec Italy</Nav.Link>
               <Nav.Link href="#turnos">Turnos</Nav.Link>
               <Nav.Link href="#turnos">Login</Nav.Link>
             </Nav>

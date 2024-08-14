@@ -26,7 +26,7 @@ const MainClientas = () => {
         <Container className="main-clientas mt-5">
 
           <div className="TituloClientas" data-aos="fade-down"  data-aos-easing="linear"  data-aos-duration="2500">
-            <h2 className="text-center">Clientas</h2>
+            <h2 className="text-center">Inspiraciones Creativas</h2>
           </div>
 
           <Row className="CardClientas">
