@@ -1,3 +1,8 @@
+.Promos{
+  font-family: "Kanit", sans-serif;
+  font-weight: auto;
+  font-style: normal;
+}
 .promo-container {
     padding: 20px 0;
     background-color: #f0c8be;;
