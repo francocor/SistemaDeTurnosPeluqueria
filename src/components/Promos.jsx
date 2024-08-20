@@ -29,10 +29,10 @@ const Promos = () => {
 
         <Col md={6} className="promo-text d-flex flex-column justify-content-center" data-aos="zoom-in-left">
           <h3 className="mb-4">< HiFire/>Promos de Agosto< HiFire/></h3>
-          <a href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwjylrHllfGHAxWJrJUCHb30N2sQPAgI" className="botonpromo" target="_blank"><p><FaHeart/> Lavado+Corte+Brashing/plancha $</p></a>
-          <a href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwjylrHllfGHAxWJrJUCHb30N2sQPAgI" className="botonpromo" target="_blank"><p><FaHeart/> Color(retoque crecimiento)+Tratamiento+Modelado $</p></a>
-          <a href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwjylrHllfGHAxWJrJUCHb30N2sQPAgI" className="botonpromo" target="_blank"><p><FaHeart/> Mechas/Balayage+Traatamiento+Modelado $</p></a>
-          <a href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwjylrHllfGHAxWJrJUCHb30N2sQPAgI" className="botonpromo" target="_blank"><p><FaHeart/> Color(completo)+Tratamiento+Modelado $</p></a>
+          <a href="" className="botonpromo" target="_blank"><p><FaHeart/> Lavado+Corte+Brashing/plancha $</p></a>
+          <a href="" className="botonpromo" target="_blank"><p><FaHeart/> Color(retoque crecimiento)+Tratamiento+Modelado $</p></a>
+          <a href="" className="botonpromo" target="_blank"><p><FaHeart/> Mechas/Balayage+Traatamiento+Modelado $</p></a>
+          <a href="" className="botonpromo" target="_blank"><p><FaHeart/> Color(completo)+Tratamiento+Modelado $</p></a>
         </Col>
       </Row>
     </Container>

@@ -2,16 +2,13 @@ import "../css/MainClientas.css";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
+import Image from 'react-bootstrap/Image';
 import clienta from "../assets/Clienta.jpg";
 import Aos from "aos"
 import "aos/dist/aos.css"
 
 
-/*const images = [
-    clienta1, clienta2, clienta3, clienta4,
-    clienta5, clienta6, clienta7, clienta8
-  ];*/
+
 
 
 
@@ -31,17 +28,39 @@ const MainClientas = () => {
 
           <Row className="CardClientas">
           
-          {/*{images.map((img, idx) => (*/}
-            {Array.from({ length: 8 }).map((_, idx) => (
+            <Col xs={6} md={4} data-aos="zoom-in">
+              <Image src={clienta} thumbnail />
+            </Col>
 
-              <Col md={3} key={idx} className="mb-4" data-aos="flip-right">
+            <Col xs={6} md={4} data-aos="zoom-in">
+              <Image src={clienta} thumbnail />
+            </Col>
 
-                <Card>
-                  <Card.Img variant="top" src={clienta} alt="Clienta" className="img-fluid" />
-                </Card>
-                
-              </Col>
-            ))}
+            <Col xs={6} md={4} data-aos="zoom-in">
+              <Image src={clienta} thumbnail />
+            </Col>
+
+            <Col xs={6} md={4} data-aos="zoom-in">
+              <Image src={clienta} thumbnail />
+            </Col>
+
+            <Col xs={6} md={4} data-aos="zoom-in">
+              <Image src={clienta} thumbnail />
+            </Col>
+
+            <Col xs={6} md={4} data-aos="zoom-in">
+              <Image src={clienta} thumbnail />
+            </Col>
+
+            <Col xs={6} md={4} data-aos="zoom-in">
+              <Image src={clienta} thumbnail />
+            </Col>
+
+            <Col xs={6} md={4} data-aos="zoom-in">
+              <Image src={clienta} thumbnail />
+            </Col>
+
+              
           </Row>
         </Container>
       </div>

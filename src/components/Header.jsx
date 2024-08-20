@@ -49,8 +49,8 @@ const Header = () => {
               <Nav.Link href="/MainProductos">Productos</Nav.Link>
               <Nav.Link href="/MainCursos">Cursos</Nav.Link>
               <Nav.Link href="#cursosTecItali">Tec Italy</Nav.Link>
-              <Nav.Link href="#turnos">Turnos</Nav.Link>
-              <Nav.Link href="#turnos">Login</Nav.Link>
+              <Nav.Link href="/MainTurnos">Turnos</Nav.Link>
+              <Nav.Link href="#Login">Login</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
