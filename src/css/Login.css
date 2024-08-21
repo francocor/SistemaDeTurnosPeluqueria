@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cursive";
+  }
+  
+  /* Estilos para el contenedor principal */
+  .MainLogin {
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    justify-content: center; /* Alinea los elementos horizontalmente al centro */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    min-height: 100vh; /* Establece la altura mínima del contenedor como el 100% del viewport */
+    /*background-image: linear-gradient(135deg, #f593c1, #f569a3,
+                                          #c4287e, #9c145f, #f77ff7,
+                                          #d663e6, #d437e2, #9d4cc2,
+                                          #9651a3, #4f2261, #9c0b4f,
+                                          #a06075, #f593c1, #f569a3,
+                                          #c4287e, #9c145f, #f77ff7,
+                                          #d663e6, #d437e2, #9d4cc2,
+                                          #9651a3, #4f2261, #9c0b4f,
+                                          #a06075, #f30a0a);*/ /* Establece un fondo con un degradado lineal */
+    background-image: linear-gradient(
+      58.2deg,
+      rgba(40, 157, 212, 0.73) -3%,
+      rgba(171, 53, 163, 0.45) 49.3%,
+      rgba(255, 204, 112, 0.37) 97.7%
+    );
+    background-size: 500%; /* Define el tamaño del fondo del degradado */
+    animation: fanimado 10s infinite; /* Aplica una animación llamada fanimado durante 10 segundos y la repite infinitamente */
+  }
+  
+  /* Estilos para el contenedor del formulario */
+  .wrapper {
+    width: 420px; /* Establece el ancho del contenedor del formulario */
+    background: rgb(
+      255,
+      255,
+      255,
+      0.7
+    ); /* Establece un fondo semitransparente blanco */
+    color: #030303; /* Establece el color del texto */
+    border-radius: 10px; /* Aplica bordes redondeados al contenedor */
+    padding: 30px 40px; /* Establece el relleno interno del contenedor */
+    border: 2px solid white; /* Establece un borde sólido blanco de 2 píxeles */
+    box-shadow: inset 0 0 5px red, 0 0 10px red; /* Agrega una sombra al contenedor */
+  }
+  
+  /* Estilos para el título del formulario */
+  .wrapper h1 {
+    font-size: 36px; /* Establece el tamaño de fuente del título */
+    text-align: center; /* Alinea el texto al centro */
+    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red; /* Agrega una sombra al texto */
+    color: rgb(0, 0, 0); /* Establece el color del texto */
+  }
+  
+  /* Estilos para el campo de entrada */
+  .wrapper .input-box {
+    position: relative; /* Establece la posición relativa para el campo de entrada */
+    width: 100%; /* Establece el ancho del campo de entrada al 100% */
+    height: 50px; /* Establece la altura del campo de entrada */
+    margin: 30px 0; /* Establece el margen superior e inferior */
+  }
+  
+  .input-box input {
+    width: 100%; /* Establece el ancho del campo de entrada al 100% */
+    height: 100%; /* Establece la altura del campo de entrada al 100% */
+    background: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Establece un borde sólido con opacidad */
+    border-radius: 40px; /* Aplica bordes redondeados al campo de entrada */
+    font-size: 16px; /* Establece el tamaño de fuente */
+    color: #000000; /* Establece el color del texto */
+    padding: 20px 45px 20px 20px; /* Establece el relleno interno del campo de entrada */
+    box-shadow: inset 0 0 5px red, 0 0 10px red; /* Agrega una sombra al campo de entrada */
+  }
+  
+  .input-box input::placeholder {
+    color: #000000; /* Establece el color del texto del marcador de posición */
+  }
+  
+  .input-box img {
+    position: absolute; /* Establece la posición absoluta para el icono dentro del campo de entrada */
+    right: 20px; /* Alinea el icono a la derecha */
+    top: 50%; /* Alinea el icono verticalmente al centro */
+    transform: translateY(-50%); /* Ajusta la posición vertical del icono */
+    font-size: 20px; /* Establece el tamaño de fuente del icono */
+  }
+  
+  /* Estilos para el texto de recordar y olvidar */
+  .wrapper .remember-forgot {
+    display: flex; /* Utiliza flexbox para organizar los elementos */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    font-size: 14.5px; /* Establece el tamaño de fuente */
+    margin: -15px 0 15px; /* Establece el margen superior e inferior */
+  }
+  
+  .remember-forgot label input {
+    accent-color: #000000; /* Cambia el color del marcador de verificación */
+    margin-right: 3px; /* Establece un margen a la derecha */
+    box-shadow: inset 0 0 5px red, 0 0 10px red; /* Agrega una sombra al marcador de verificación */
+  }
+  
+  .remember-forgot a {
+    color: #000000; /* Establece el color del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+    text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red; /* Agrega una sombra al texto del enlace */
+  }
+  
+  .remember-forgot a:hover {
+    text-decoration: underline; /* Subraya el texto del enlace al pasar el mouse */
+  }
+  
+  /* Estilos para el botón de enviar */
+  .wrapper .btn {
+    width: 100%; /* Establece el ancho del botón al 100% */
+    height: 45px; /* Establece la altura del botón */
+    background: #fff; /* Fondo blanco */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno */
+    border-radius: 40px; /* Aplica bordes redondeados al botón */
+    box-shadow: inset 0 0 5px red, 0 0 10px red; /* Agrega una sombra al botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Establece el tamaño de fuente */
+    color: #333; /* Establece el color del texto */
+    font-weight: 600; /* Establece el grosor de la fuente */
+  }
+  
+  /* Estilos para el enlace de registro */
+  .wrapper .register-link {
+    font-size: 14.5px; /* Establece el tamaño de fuente */
+    text-align: center; /* Alinea el texto al centro */
+    margin: 20px 0 15px; /* Establece el margen superior e inferior */
+  }
+  
+  .register-link p a {
+    color: #fff; /* Establece el color del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: 600; /* Establece el grosor de la fuente */
+  }
+  
+  .register-link p a:hover {
+    text-decoration: underline; /* Subraya el texto del enlace al pasar el mouse */
+  }
+  
+  /* Animación para el fondo */
+  @keyframes fanimado {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 75% 50%;
+    }
+  }
+  
+  /* Media query para pantallas de hasta 768px de ancho */
+  @media only screen and (max-width: 768px) {
+    .wrapper {
+      width: 80%; /* Establece el ancho del contenedor del formulario al 80*/
+    }
+  }

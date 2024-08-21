@@ -2,7 +2,7 @@ import "../css/MainTurnos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Aos from "aos"
 import "aos/dist/aos.css"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 
 
@@ -13,8 +13,32 @@ const MainTurnos = () => {
         Aos.init();
     }, [])
 
+const [formData, setFormData] = useState({
+  nombre:"",
+  apellido:"",
+  telefono:"",
+  fecha:"",
+  hora:"",
+  servicios:""
+})
 
+const handleChange = (e)=>{
+  setFormData({...formData, [e.target.id]: e.target.value,})
+}
 
+const handleSubmit = (e)=>{
+  e.preventDefault()
+
+  const mensaje = `Hola, me gustaria solicitar un turno. Mis datos son:
+  Nombre: ${formData.nombre}
+  Apellido: ${formData.apellido}
+  Telefono: ${formData.telefono}
+  Fecha: ${formData.fecha}
+  Hora: ${formData.hora}
+  Servicios: ${formData.servicios}`
+
+  
+}
 
 
 
@@ -105,6 +129,18 @@ const MainTurnos = () => {
                   </label>
                   <input type="time" className="form-control" id="hora" />
                 </div>
+              </div>
+
+              <div className="col-md-6">
+                <label htmlFor="Servicios" className="form-label">
+                  Servicios
+                </label>
+                <textarea
+                  id="Servicios"
+                  className="form-control"
+                  placeholder="Servicios"
+                  rows="4"
+                ></textarea>
               </div>
 
               <div className="d-flex justify-content-between">
