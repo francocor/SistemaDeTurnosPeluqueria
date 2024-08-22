@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { useEffect, useState } from "react";
-
+import { validacionFechayHora } from "../Validacion/validacionFechayHora";
 
 
 
@@ -22,12 +22,21 @@ const [formData, setFormData] = useState({
   servicios:""
 })
 
+const [error, setError] = useState("")
+
 const handleChange = (e)=>{
   setFormData({...formData, [e.target.id]: e.target.value,})
 }
 
 const handleSubmit = (e)=>{
   e.preventDefault()
+
+  const {isValid, message} = validacionFechayHora(formData.fecha, formData.hora)
+  if(!isValid){
+    setError(message)
+    return
+  }
+
 
   const mensaje = `Hola, me gustaria solicitar un turno. Mis datos son:
   Nombre: ${formData.nombre}
@@ -37,8 +46,15 @@ const handleSubmit = (e)=>{
   Hora: ${formData.hora}
   Servicios: ${formData.servicios}`
 
-  
+  const url = `https://wa.me/+5493815151747?text=${encodeURIComponent(
+  mensaje
+)}`
+
+  window.open(url, "_blank");
+
 }
+
+
 
 
 
@@ -75,7 +91,12 @@ const handleSubmit = (e)=>{
         
         <div className="col-md-6" data-aos="flip-up">
           <div className="container">
-            <form>
+            <form onSubmit={handleSubmit}>
+              {error && (
+                <div className="alert alert-danger" role="alert">
+                  {error}
+                </div>
+              )}
               <div className="row mb-3">
                 <div className="col-md-6 mb-3 mb-md-0">
                     
@@ -87,6 +108,9 @@ const handleSubmit = (e)=>{
                     className="form-control"
                     id="nombre"
                     placeholder="Nombre"
+                    value={formData.nombre}
+                    onChange={handleChange}
+                    required
                   />
                 </div>
 
@@ -99,6 +123,9 @@ const handleSubmit = (e)=>{
                     className="form-control"
                     id="apellido"
                     placeholder="Apellido"
+                    value={formData.apellido}
+                    onChange={handleChange}
+                    required
                     />
                 </div>
 
@@ -112,6 +139,9 @@ const handleSubmit = (e)=>{
                   className="form-control"
                   id="telefono"
                   placeholder="Teléfono"
+                  value={formData.telefono}
+                  onChange={handleChange}
+                  required
                   />
               </div>
 
@@ -120,14 +150,26 @@ const handleSubmit = (e)=>{
                   <label htmlFor="fecha" className="form-label">
                     Fecha
                   </label>
-                  <input type="date" className="form-control" id="fecha" />
+                  <input type="date" 
+                  className="form-control" 
+                  id="fecha" 
+                  value={formData.fecha}
+                  onChange={handleChange}
+                  required
+                  />
                 </div>
 
                 <div className="col-md-6">
                   <label htmlFor="hora" className="form-label">
                     Hora
                   </label>
-                  <input type="time" className="form-control" id="hora" />
+                  <input type="time" 
+                  className="form-control" 
+                  id="hora" 
+                  value={formData.hora}
+                  onChange={handleChange}
+                  required
+                  />
                 </div>
               </div>
 
@@ -140,6 +182,8 @@ const handleSubmit = (e)=>{
                   className="form-control"
                   placeholder="Servicios"
                   rows="4"
+                  value={formData.servicios}
+                  onChange={handleChange}
                 ></textarea>
               </div>
 
