@@ -1,6 +1,11 @@
+*{
+  font-family: "Pacifico", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
 .Footer {
     padding: 2rem 0;
-    margin-top: 10rem; /* Reduce un poco el margen superior */
+    margin-top: 10rem; 
     background-color: #efe9d1;
     font-family: "Pacifico", system-ui;
     font-weight: 400;
@@ -26,31 +31,36 @@
 }
 
 .ft-1 p {
-    padding: 0rem 2rem 0.8rem 0; /* Ajusta el padding para mejor alineación */
+    padding: 0rem 2rem 0.8rem 0; 
     font-weight: 500;
+    font-family: "Pacifico", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .footer-icons a {
-    color: #f15e82; /* Cambia este valor al color que prefieras */
+    color: #f15e82; 
     transition: color 0.3s;
   }
   
   .footer-icons a:hover {
-    color: #f3a8ac; /* Color al hacer hover, también lo puedes cambiar */
+    color: #f3a8ac; 
   }
 
 
 .Footer h5 {
     color: #f15e82;
-    margin-bottom: 2rem; /* Agrega espacio debajo de los títulos */
+    margin-bottom: 2rem; 
+    font-family: "Pacifico", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .tecitali-image {
-    width: 200px; /* Ajusta este valor según el tamaño que prefieras */
-    height: auto; /* Mantiene la proporción original de la imagen */
-    display: inline-block; /* Permite que la imagen se alinee con otros elementos en línea */
-    vertical-align: middle; /* Alinea verticalmente la imagen al centro del texto */
-    margin-left: -30px; /* Ajusta este valor para mover la imagen más a la izquierda */
+    width: 200px; 
+    height: auto; 
+    display: inline-block; 
+    vertical-align: middle; 
   }
 
 .Last-footer {
@@ -63,7 +73,10 @@
     margin-bottom: 0;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #fff; /* Asegura que el texto sea visible sobre el fondo rojo */
+    color: #fff; 
+    font-family: "Pacifico", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -82,6 +95,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
   
   .whatsapp-float:hover {
@@ -92,4 +106,10 @@
   .whatsapp-float svg {
     width: 100%;
     height: 100%;
+  }
+
+  .textofooter{
+    font-family: "Pacifico", system-ui;
+    font-weight: 400;
+    font-style: normal;
   }

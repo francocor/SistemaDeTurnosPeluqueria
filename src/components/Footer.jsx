@@ -36,9 +36,9 @@ const Footer = () => {
 
             <div className="col-md-6 col-lg-4 col-12 ft-3">
               <h5>Contacto</h5>
-              <p><i className="fa-solid fa-phone-volume"></i><FaWhatsapp size="1.5rem"/> +381 6223344</p>
-              <p><i className="fa-solid fa-envelope"></i><CiMail size="1.5rem"/> eugecolorista@gmail.com</p>
-              <p><i className="fa-solid fa-paper-plane"></i>< TbBrandGoogleMaps size="1.5rem"/> San martin 1100, San Miguel de Tucuman, Tucuman, Argentina</p>
+              <p className="textofooter"><i className="fa-solid fa-phone-volume"></i><FaWhatsapp size="1.5rem"/> +381 6223344</p>
+              <p className="textofooter"><i className="fa-solid fa-envelope"></i><CiMail size="1.5rem"/> eugecolorista@gmail.com</p>
+              <p className="textofooter"><i className="fa-solid fa-paper-plane"></i>< TbBrandGoogleMaps size="1.5rem"/> San martin 1100, San Miguel de Tucuman, Tucuman, Argentina</p>
             </div>
 
           </div>
