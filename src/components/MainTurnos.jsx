@@ -23,20 +23,37 @@ const [formData, setFormData] = useState({
 })
 
 const [error, setError] = useState("")
+const [horariosDisponibles, setHorariosDisponibles] = useState([])
+
+useEffect(()=>{
+  const horarios = []
+  const startHour = 9
+  const endHour = 21
+  const interval = 2
+
+  for(let hour = startHour; hour <= endHour; hour += interval){
+    horarios.push(`${hour.toString().padStart(2, "0")}:00`)
+  }
+  setHorariosDisponibles(horarios)
+}, [])
+
 
 const handleChange = (e)=>{
   setFormData({...formData, [e.target.id]: e.target.value,})
 }
 
 const handleSubmit = (e)=>{
-  e.preventDefault()
+  e.preventDefault();
+  
+  console.log("Datos antes de validar:", formData);
 
-  const {isValid, message} = validacionFechayHora(formData.fecha, formData.hora)
-  if(!isValid){
-    setError(message)
-    return
+  const { isValid, message } = validacionFechayHora(formData.fecha, formData.hora);
+  console.log("Resultado de validacion:", isValid, message);
+
+  if (!isValid){
+    setError(message);
+    return;
   }
-
 
   const mensaje = `Hola, me gustaria solicitar un turno. Mis datos son:
   Nombre: ${formData.nombre}
@@ -46,12 +63,27 @@ const handleSubmit = (e)=>{
   Hora: ${formData.hora}
   Servicios: ${formData.servicios}`
 
-  const url = `https://wa.me/+5493815151747?text=${encodeURIComponent(
-  mensaje
-)}`
+  console.log("mensaje", mensaje)
+  window.alert("Tu turno se asigno correctamente");
 
-  window.open(url, "_blank");
+  const url = `https://wa.me/+5493816348569?text=${encodeURIComponent(mensaje)}`;
+  console.log("URL de WhatsApp:", url);
 
+  setTimeout(()=>{
+    console.log("intentando abrir URL...")
+    window.open(url, "_blank");
+  }, 100)
+
+  setFormData({
+    nombre: "",
+    apellido: "",
+    telefono: "",
+    fecha: "",
+    hora: "", 
+    servicios:""
+  })
+
+  
 }
 
 
@@ -163,27 +195,35 @@ const handleSubmit = (e)=>{
                   <label htmlFor="hora" className="form-label">
                     Hora
                   </label>
-                  <input type="time" 
-                  className="form-control" 
-                  id="hora" 
+                <select
+                  id="hora"
+                  className="form-control"
                   value={formData.hora}
                   onChange={handleChange}
                   required
-                  />
+                >
+                  <option value="">Seleccione el horario</option>
+                  {horariosDisponibles.map((hora) => (
+                    <option key={hora} value={hora}>
+                      {hora}
+                    </option>
+                  ))}
+                </select>               
                 </div>
               </div>
 
-              <div className="col-md-6">
-                <label htmlFor="Servicios" className="form-label">
+              <div className="mb-3">
+                <label htmlFor="servicios" className="form-label">
                   Servicios
                 </label>
                 <textarea
-                  id="Servicios"
+                  id="servicios"
                   className="form-control"
                   placeholder="Servicios"
                   rows="4"
                   value={formData.servicios}
                   onChange={handleChange}
+                  required
                 ></textarea>
               </div>
 

@@ -1,18 +1,56 @@
 export const validacionFechayHora = (fecha,hora) =>{
     if(!fecha || !hora){
-        return "La fecha y la hora son requeridos."
+        return {isValid: false, message: "fecha y hora sin obligatorios"}
     }
 
-    const dia = new Date (fecha+ 'T00:00:00').getDay()
-    const horaInt = parseInt(hora.replace(":", ""), 10)
+    //validacion dia
+    const fechaActual = new Date()
+    fechaActual.setSeconds(0, 0)
 
-    if (dia === 0){
-        return "No se atienden los Domingos"
+
+    const fechaSeleccionada = new Date(`${fecha}T${hora}:00`)
+
+
+
+    console.log("fecha actual:", fechaActual)
+    console.log("fecha seleccionada:", fechaSeleccionada)
+
+    if(fechaSeleccionada < fechaActual){
+        return{
+            isValid:false,
+            message: "no puedes solicitar un turno en fechas anteriores a la fecha actual"
+        }
     }
 
-    if (horaInt < 900 || horaInt > 2100){
-        return "El horario del turno debe ser entre 09:00 a 21:00"
+
+
+    const diaSemana = fechaSeleccionada.getDay()
+    console.log("dia de la semana (0 = domingo):", diaSemana)
+
+    
+    if(diaSemana === 0){
+        return{
+            isValid: false, 
+            message:"No se puede asignar turnos los domingos"};
     }
 
-    return "";
+
+
+
+
+ //validacion de Horario
+    const horasPermitidas = []
+    const startHour = 9
+    const endHour = 21
+    const interval = 2
+
+    for(let hour = startHour; hour <= endHour; hour += interval){
+        horasPermitidas.push(`${hour.toString().padStart(2, "0")}:00`)
+    }
+
+    if (!horasPermitidas.includes(hora)){
+        return{isValid: false, message:"hora no valida"}
+    }
+
+    return{isValid: true, message: ""}
 }
