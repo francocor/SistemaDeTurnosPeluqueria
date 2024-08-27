@@ -1,7 +1,10 @@
 .Promos{
-  font-family: "Kanit", sans-serif;
-  font-weight: auto;
-  font-style: normal;
+  text-align: left; 
+  font-family: Arial Black; 
+  font-weight: bold; 
+  font-size: 30px; 
+  color: #fff; 
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 .promo-container {
     padding: 20px 0;
@@ -11,24 +14,25 @@
   .video-responsive {
     width: 100%;
     height: auto;
-    max-height: 70vh; /* Ajusta la altura máxima del video */
+    max-height: 70vh; 
+  
   }
   
-  /* Opcional: Ajustar márgenes y paddings si es necesario */
   .promo-video {
-    padding-right: 2rem; /* Ajusta el espacio a la derecha del video */
+    padding-right: 2rem; 
   }
   
   .promo-text {
-    padding-left: 2rem; /* Ajusta el espacio a la izquierda del texto */
+    padding-left: 2rem;
+     
   }
 
-  .promo-text h3{
+  .promo-text h1{
     text-decoration: dashed;
-    text-decoration: underline;
+    color: #ff0000;
   }
 
   .botonpromo{
-    color: black;
+    color: #f48f9f;
     text-decoration: none;
   }

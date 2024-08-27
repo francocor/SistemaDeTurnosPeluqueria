@@ -3,6 +3,13 @@
     font-weight: auto;
     font-style: normal;
 }
-.TituloProductos{
-    text-decoration: underline;
+.P{    
+
+    text-align: left; 
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #f48f9f; 
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+        
 }

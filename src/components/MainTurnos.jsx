@@ -98,15 +98,17 @@ const handleSubmit = (e)=>{
         
         <div className="col-md-6 mb-4 mb-md-0" data-aos="flip-up">
           <div className="text-center text-md-start">
-            <h1>Sistema de Turnos</h1>
+            <h1 className="tituloTurnos">Sistema de Turnos</h1>
             <p>
               1 - Para solicitar un turno primero deben realizar una seña de
-              $5000 pesos, haciendo click <a href="#">aquí</a> los llevará a
+              $5000 pesos, haciendo click <a href="https://www.mercadopago.com.ar/paid?CODE=V1C70X&utm_source=google&utm_medium=cpc&utm_campaign=MLA_MP_G_AO_ALL_BRD_SEARCH_MP_EXACT&matt_tool=28766038&matt_word=MLA_MP_Sellers_AO_X_G_Search_X_BrandKW_X&gad_source=1&gclid=CjwKCAjwiaa2BhAiEiwAQBgyHqTmsXem-W2HCa0DveUX5AkWV1yMylsE6pcaH0HILi6bBhlLrDLlahoCBFAQAvD_BwE" target="_blank">
+                Aquí
+              </a> los llevará a
               Mercado Pago para realizar la seña.
             </p>
             <p>
               2 - Una vez realizada la seña, mandar captura al{" "}
-              <a href="#">WhatsApp</a>.
+              <a href="https://wa.me/3816223344" target="_blank">WhatsApp</a>.
             </p>
             <p>
               3 - Una vez finalizado el paso anterior, ya podes llenar el

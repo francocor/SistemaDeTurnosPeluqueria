@@ -26,8 +26,8 @@ const MainServicios = () => {
   return (
     <div className="Servicios">
 
-        <div className="TituloServicios" data-aos="flip-down">
-            <h1 className="text-center my-4">Servicios</h1>
+        <div className="TituloServicios" data-aos="fade-down">
+            <h1 className="S text-center my-4">Servicios</h1>
         </div>
 
         <div>

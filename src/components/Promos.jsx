@@ -28,11 +28,11 @@ const Promos = () => {
         </Col>
 
         <Col md={6} className="promo-text d-flex flex-column justify-content-center" data-aos="zoom-in-left">
-          <h3 className="mb-4">< HiFire/>Promos de Agosto< HiFire/></h3>
-          <a href="" className="botonpromo" target="_blank"><p><FaHeart/> Lavado+Corte+Brashing/plancha $</p></a>
-          <a href="" className="botonpromo" target="_blank"><p><FaHeart/> Color(retoque crecimiento)+Tratamiento+Modelado $</p></a>
-          <a href="" className="botonpromo" target="_blank"><p><FaHeart/> Mechas/Balayage+Traatamiento+Modelado $</p></a>
-          <a href="" className="botonpromo" target="_blank"><p><FaHeart/> Color(completo)+Tratamiento+Modelado $</p></a>
+          <h1 className="mb-4">< HiFire/>Promos de Agosto< HiFire/></h1>
+          <a href="./MainTurnos" className="botonpromo" target="_blank"><p><FaHeart/> Lavado+Corte+Brashing/plancha $</p></a>
+          <a href="./MainTurnos" className="botonpromo" target="_blank"><p><FaHeart/> Color(retoque crecimiento)+Tratamiento+Modelado $</p></a>
+          <a href="./MainTurnos" className="botonpromo" target="_blank"><p><FaHeart/> Mechas/Balayage+Tratamiento+Modelado $</p></a>
+          <a href="./MainTurnos" className="botonpromo" target="_blank"><p><FaHeart/> Color(completo)+Tratamiento+Modelado $</p></a>
         </Col>
       </Row>
     </Container>

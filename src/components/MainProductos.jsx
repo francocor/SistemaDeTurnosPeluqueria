@@ -21,8 +21,8 @@ const MainProductos = () => {
   return (
     <div className="Productos">
 
-        <div className="TituloProductos" data-aos="flip-down">
-            <h1 className="text-center my-4">Productos</h1>
+        <div className="TituloProductos" data-aos="fade-down">
+            <h1 className="P text-center my-4">Productos</h1>
         </div>
 
         <div>

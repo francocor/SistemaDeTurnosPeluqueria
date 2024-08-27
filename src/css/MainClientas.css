@@ -6,12 +6,11 @@
 
 .TituloClientas {
   margin-bottom: 20px;
-  font-family: "Kanit", sans-serif;
-  font-weight: auto;
-  font-style: normal;
-  font-size: 3rem;
-  text-align: center;
-  color: #000;
+  font-family: Arial Black; 
+  font-weight: bold; 
+  font-size: 30px; 
+  color: #f48f9f; 
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
 .CardClientas .col-md-3 {

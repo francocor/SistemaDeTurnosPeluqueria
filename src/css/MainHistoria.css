@@ -1,5 +1,10 @@
 .main-historia {
   padding: 20px 0;
+  font-family: Arial Black; 
+  font-weight: bold; 
+  font-size: 30px; 
+  color: #f48f9f; 
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   }
   
   .historia-content {
